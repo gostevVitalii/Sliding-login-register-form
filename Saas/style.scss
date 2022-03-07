@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import "__media";
+
+// VARIABLES
 $blueBG: #03a9f4;
 $redBG: #f43648;
 $whiteColor: #fff;
 $blackColor: #000;
 $greyColor: #333;
 
+//STYLES
 * {
     margin: 0;
     padding: 0;
@@ -64,6 +68,8 @@ body {
         }
     }
 }
+
+//FORM
 .formBx {
     position: absolute;
     top: 0;
