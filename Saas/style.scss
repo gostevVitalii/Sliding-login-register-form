@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+$blueBG: #03a9f4;
+$whiteColor: #fff;
+$blackColor: #000;
+$greyColor: #333;
 
 * {
     margin: 0;
@@ -11,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #03a9f4;
+    background: $blueBG;
     transition: 0.5s;
 }
 .container {
@@ -27,8 +31,32 @@ body {
     height: 420px;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     .box {
         position: relative;
         width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2 {
+            color: $whiteColor;
+            font-size: 1.2em;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        button {
+            cursor: pointer;
+            padding: 10px 20px;
+            background: $whiteColor;
+            color: $greyColor;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+        }
     }
 }
